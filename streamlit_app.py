@@ -54,22 +54,5 @@ if st.sidebar.button("Download"):
     href = f'<a href="data:file/csv;base64,{b64}" download="results.csv">Download csv file</a>'
     st.markdown(href, unsafe_allow_html=True)
 
-
-#if st.sidebar.button("Download"):
-#    results.to_csv('result.csv', index=False)
-#    st.sidebar.file_downloader("Download", 'results.csv')
-#    st.sidebar.success('File downloaded')
-
-#if st.sidebar.button("Download"):
-#     csv = df['category'].to_csv('results.csv', index=False)
-#     st.sidebar.file_downloader("Download", 'results.csv')
-#     st.sidebar.success('File downloaded')
-
-#if st.sidebar.button("Download"):
-#    csv = df.to_csv(index=False)
-#    b64 = base64.b64encode(csv.encode()).decode()
-#    href = f'<a href="data:file/csv;base64,{b64}" download="myfilename.csv">Download CSV File</a>'
-#    st.markdown(href, unsafe_allow_html=True)
-
 st.title("About")
 st.subheader("You can tag your input CSV file of theses and dissertations with Library Science, Archival Studies, and Information Science categories. The screen will show the output.")
